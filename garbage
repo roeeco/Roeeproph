@@ -1,0 +1,23 @@
+//Fade Nav
+smoothScroll.init();
+var fadedTop = $('#faded').offset().top;
+$(window).scroll(function () {
+if ((fadedTop - $(window).scrollTop()) < 100) {
+    $('#faded').stop().fadeTo(100, 1);
+} else {
+    $('#faded').stop().fadeTo('fast', 0);
+}
+});
+
+smoothScroll.init();
+var fadedTop2 = $('#faded2').offset().top;
+$(window).scroll(function () {
+if ((fadedTop2 - $(window).scrollTop()) < 50) {
+    $('#faded2').stop().fadeTo(100, 1);
+} else {
+    $('#faded2').stop().fadeTo('fast', 0);
+}
+});
+-->
+
+skrollr.init();
